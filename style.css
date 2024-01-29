@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,300;0,500;0,600;1,300&family=Salsa&display=swap');
+
+
+:root{
+    --green: #97d81d;
+    --text-withe:#ffff;
+    --backround:#18181b;
+    --text-agray:#c4c4c4;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    display: flex;
+    
+}
+
+a{
+    text-decoration: none;
+
+}
+body{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    background-color:#18181b;
+
+
+}
+nav{
+    max-width: 1200px;
+  margin: auto;
+  padding: 32px 16px ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+
+}
+.nav-logo{
+    max-width: 100px;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+ 
+
+}
+.link a{
+    position: relative;
+    padding-bottom: 10px;
+    color: #fff ;
+}
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom:0 ;
+    left: 0;
+    background-color: #97d81d;
+    transition: all 0.3s ease;
+
+
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+
+.btn{
+    padding: 16px 32px;
+    font-size: 16px;
+    color: var(--text-withe);
+    background-color: var(--green);
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    background-color: var(--green);
+
+    }
+
+    .container{
+        max-width: 1200px;
+        margin: auto;
+        padding: 5rem 2rem;
+    
+    }
+
+    .blur{
+        position: absolute;
+        box-shadow: 0 0 1000px 50px var(--green);
+        z-index: -100;
+
+    }
+
+header{
+    position: relative;
+    padding-top:32px ;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 32px;
+
+}
+header .content h4{
+    margin-bottom: 16px;
+    color: var(--text-withe);
+    font-size: 16px;
+    font-weight: 600;
+}
+header .content h1{
+    color: var(--text-withe);
+    margin-bottom:16px ;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+    }
+    header .content p{
+        color: var(--text-agray);
+        margin-bottom: 16px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
