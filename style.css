@@ -6,6 +6,7 @@
     --text-withe:#ffff;
     --backround:#18181b;
     --text-agray:#c4c4c4;
+    --purple:#770047;
 }
 
 *{
@@ -82,7 +83,7 @@ nav{
     font-size: 16px;
     color: var(--text-withe);
     background-color: var(--green);
-    border: 1px solid;
+    border: 1px solid var(--green);
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -108,9 +109,9 @@ nav{
 
 header{
     position: relative;
-    padding-top:32px ;
+    padding-top:2rem ;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 32px;
 
@@ -134,4 +135,157 @@ header .content h1{
         font-size: 20px;
         font-weight: 500;
     }
+    header .btn{
+        margin-bottom: 3rem;
+     }
 
+    header .content h1 span{
+
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px  var(--text-withe);
+
+
+    }
+    header .image{
+        position: relative;
+        
+    }
+    header .image::before{
+        content: "X";
+        position: absolute;
+        top: 0;
+       left: 50%;
+       transform:translateX(-50%) ;
+       font-size: 38rem;
+       font-weight: 400;
+       line-height: 20rem;
+       color: var(--green);
+       opacity: 0.2;
+       z-index: -1000;
+
+
+
+    }
+    header .image img{
+        max-width: 600px;
+        margin: auto;
+    }
+
+
+   .container h2{
+   font-size: 35px;
+   color:var(--text-agray);
+   margin-bottom: 2rem;
+   text-decoration: underline;
+
+   }
+
+
+.charasteristic{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 32px;
+    
+}
+.container h4{
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-weight: 400;
+    color:var(--green) ;
+}
+
+.container p{
+    color: var(--text-withe);
+    margin-bottom: 1rem;
+    
+}
+.card a{
+    position: relative;
+    padding-bottom: 10px;
+    color: var(--green);
+    font-weight: 800;
+
+}
+.card a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom:0 ;
+    left: 0;
+    background-color:var(--text-withe);
+    transition: all 0.3s ease;
+}
+
+.card a:hover::after{
+    width: 100%;
+}
+
+footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px repeat(3,1fr);
+    gap :2rem;
+
+}
+footer .column .logo{
+    max-width: 100px;
+    margin-bottom: 2rem;
+
+}
+
+footer .column p{
+    color: var(--text-withe);
+    margin-bottom: 2rem;
+}
+footer .column .socials{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer .column .socials a{
+    color: var(--text-withe);
+    border: 1px solid var(--text-withe);
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+
+}
+footer .column .socials a:hover{
+    color: var(--text-withe);
+    background-color: var(--green);
+    border-color: #97d81d;
+
+}
+ 
+footer .column h4{
+    color: var(--text-withe);
+    margin-bottom:2rem ;
+    font-size: 1,2rem;
+    font-weight: 500;
+}
+footer .column > a{
+    display: block;
+    color: var(--text-withe);
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+
+
+}
+
+footer .column > a:hover{
+    color: #97d81d;
+
+}
+
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: var(--green);
+    font-size: 15px;
+    text-align: center;
+}
