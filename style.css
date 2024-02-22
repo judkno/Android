@@ -386,6 +386,18 @@ background-color: var(--green);
         }
 
         @media (max-width : 600px){
+            body{
+                font-size: 12px;
+            }
+
+            .container{
+                max-width: 600px;
+                margin: auto;
+                padding: 5rem 2rem;
+            }
+
+
+
             header .image::before{ display: none;
                 
             }
