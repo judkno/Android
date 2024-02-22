@@ -79,6 +79,7 @@ nav{
 }
 
 .btn{
+    
     padding: 16px 32px;
     font-size: 16px;
     color: var(--text-withe);
@@ -288,4 +289,49 @@ footer .column > a:hover{
     color: var(--green);
     font-size: 15px;
     text-align: center;
+}
+#car-toggle{
+    display: none;
+}
+
+#car-toggle:checked + .cart
+{
+    display: flex;
+}
+.cart{
+position: absolute;
+    top: 130px;
+    right: 0;
+    padding: 10px 20px;
+    background: var(--backround);
+    border-left: 1px solid var(--green);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: calc(100vh - 65px);
+    overflow-y:scroll;
+    display: none;
+    z-index: 2;
+}
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #2323234e;
+    padding: 20px;
+    border: 1px solid var(--electric);
+    border-radius: 10px;
+}
+.cart-item img{
+    height: 65px;
+    width: 65px;
+}
+.car-label img{
+    width: 45px;
+background-color: var(--green);
+  border-radius: 10px;
+  cursor: pointer;
+
+
 }
