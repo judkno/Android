@@ -365,7 +365,7 @@ background-color: var(--green);
      }
 
      
-     @media(width < 900px){
+     @media(max-width : 900px){
         .nav-links{
             display: none;
 
@@ -385,7 +385,7 @@ background-color: var(--green);
             grid-template-columns: 1fr 200px;
         }
 
-        @media (width < 600px){
+        @media (max-width : 600px){
             header .image::before{ display: none;
                 
             }
@@ -394,7 +394,7 @@ background-color: var(--green);
             }
             footer{
                 grid-template-columns: 1fr 150px;
-                
+
                 
 
             }
